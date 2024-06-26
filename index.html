@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <head>
+        <form class="form" action="nowhere" autocomplete="off">
+          <div class="input-container">
+            <div class="date">
+              <label for="day">DAY</label>
+              <input
+                type="text"
+                class="input-field"
+                id="day"
+                placeholder="DD"
+              />
+              <span class="date-error day-error"></span>
+            </div>
+            <div class="date">
+              <label for="month">MONTH</label>
+              <input
+                type="text"
+                class="input-field"
+                id="month"
+                placeholder="MM"
+              />
+              <span class="date-error month-error"></span>
+            </div>
+            <div class="date">
+              <label for="year">YEAR</label>
+              <input
+                type="text"
+                class="input-field"
+                id="year"
+                placeholder="YYYY"
+              />
+              <span class="date-error year-error"></span>
+            </div>
+          </div>
+          <div class="middle">
+            <div class="border"></div>
+            <button class="btn" type="submit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="34"
+                viewBox="0 0 46 44"
+              >
+                <g fill="none" stroke="#fff" stroke-width="2">
+                  <path
+                    d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </head>
+      <section>
+        <div><span class="time year">- -</span> years</div>
+        <div><span class="time month">- -</span> months</div>
+        <div><span class="time day">- -</span> days</div>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  height: 100vh;
+  background-color: hsl(0, 0%, 94%);
+  display: flex;
+}
+
+/* CONTAINER */
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: #fff;
+  padding: 45px;
+  padding-right: 0;
+  border-radius: 20px;
+  border-bottom-right-radius: 175px;
+}
+
+/* HEADER */
+
+.form {
+  padding-right: 27.5px;
+  color: hsl(0, 1%, 44%);
+}
+
+label {
+  margin-bottom: 7px;
+}
+.input-field {
+  width: 80px;
+  height: 22px;
+  padding: 17px;
+  padding-right: 25px;
+  font-size: 25px;
+  font-weight: 700;
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 7px;
+}
+
+.input-field:focus {
+  outline: none;
+  border: 1px solid hsl(259, 100%, 65%);
+  caret-color: hsl(259, 100%, 65%);
+}
+
+.input-field::placeholder {
+  color: hsl(0, 1%, 44%);
+}
+
+.input-container {
+  display: flex;
+  gap: 27px;
+  font-size: 11px;
+  letter-spacing: 1.8px;
+  font-weight: 600;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+/* BORDER */
+
+.middle {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  align-items: center;
+  gap: 2px;
+}
+
+.border {
+  display: block;
+  border: 1px solid hsl(0, 0%, 94%);
+  height: 0;
+  width: 500px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(259, 100%, 65%);
+  width: 75px;
+  height: 75px;
+  border-radius: 1000px;
+  padding: 18px;
+  border: none;
+}
+
+.btn:hover,
+.btn:active {
+  cursor: pointer;
+  background-color: #000;
+}
+
+/* SECTION */
+
+section {
+  width: 100%;
+  font-size: 80px;
+  font-style: italic;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: -2px;
+}
+
+section div {
+  margin: -16px 0;
+}
+
+section div:last-child {
+  margin: none;
+}
+
+.year,
+.month,
+.day {
+  color: hsl(259, 100%, 65%);
+  letter-spacing: -3px;
+}
+
+/* JavaScript */
+
+.borderRed {
+  border: 1px solid red;
+}
+
+.textRed {
+  color: red;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.date-error {
+  font-size: 10.3px;
+  letter-spacing: 0.2px;
+  color: red;
+  margin-top: 6px;
+  font-style: italic;
+  font-weight: 400;
+}
